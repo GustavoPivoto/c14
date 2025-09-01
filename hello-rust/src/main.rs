@@ -15,3 +15,56 @@ fn main() {
         eprintln!("Erro ao exibir mensagem: {}", e);
     }
 }
+
+// Funções para teste
+pub fn add(a: i32, b: i32) -> i32 {
+    a + b
+}
+
+pub fn subtract(a: i32, b: i32) -> i32 {
+    a - b
+}
+
+pub fn multiply(a: i32, b: i32) -> i32 {
+    a * b
+}
+
+pub fn divide(a: i32, b: i32) -> Option<i32> {
+    if b == 0 {
+        None
+    } else {
+        Some(a / b)
+    }
+}
+
+pub fn is_even(n: i32) -> bool {
+    n % 2 == 0
+}
+
+pub fn is_odd(n: i32) -> bool {
+    n % 2 != 0
+}
+
+pub fn biggest(a: i32, b: i32) -> i32 {
+    if a > b {
+        a
+    } else {
+        b
+    }
+}
+
+pub fn smallest(a: i32, b: i32) -> i32 {
+    if a < b {
+        a
+    } else {
+        b
+    }
+}
+
+pub fn square(n: i32) -> i32 {
+    n * n
+}
+
+pub fn cube(n: i32) -> i32 {
+    n * n * n
+}
